@@ -205,13 +205,9 @@ Expected Register Values:
 ---
 
 ## 👨‍💻 Author
+## 👨‍💻 Contributor
 
-**P. Manikantha**
-
-B.Tech Electronics and Communication Engineering (ECE)
-
-Specialization: VLSI Design
-
+- **P. Manikantha** - RTL Design, Verilog Development, Processor Architecture, Functional Verification, Testing, and Documentation.
 ---
 
 ## 📄 License
