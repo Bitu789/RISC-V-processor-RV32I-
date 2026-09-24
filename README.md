@@ -1,15 +1,82 @@
-# RISC-V-processor-RV32I-# RV32I Single-Cycle RISC-V Processor
 
-A 32-bit **RV32I Single-Cycle RISC-V Processor** designed using **Verilog HDL** and verified in **Xilinx Vivado**. This project implements the basic RISC-V instruction set architecture (ISA) with modular RTL design and functional simulation.
+RISC-V EdgeAI Accelerator
 
----
+Overview
 
-## 📌 Project Overview
+RISC-V EdgeAI Accelerator explores a 64-bit RISC-V processor paired with a dedicated AI accelerator for parallel edge-AI workloads.
 
-This project demonstrates the design and implementation of a 32-bit single-cycle RISC-V processor based on the RV32I instruction set. The processor executes one instruction per clock cycle and is built using a modular architecture consisting of independent Verilog modules.
+Proposed Architecture
 
-The processor supports arithmetic, logical, load/store, branch, and jump operations and has been verified using RTL simulation in Xilinx Vivado.
+Snapdragon-powered HP PC
+        |
+ On-device AI model
+        |
+Workload analysis / suggestions
+        |
+Python tooling
+        |
+RISC-V configuration
+        |
++-------------------------+
+| 64-bit RISC-V Core      |
+|           |             |
+|     AI Accelerator      |
+|           |             |
+| Parallel MAC / Matrix   |
+| Quantization / Activate |
++-------------------------+
+        |
+      Memory
 
+RISC-V Foundation
+
+The existing project provides RTL modules for an ALU, Register File and Control Unit.
+
+AI Accelerator Concept
+
+The proposed accelerator targets matrix multiplication, MAC/vector operations, quantized workloads and configurable data movement. The RISC-V core controls accelerator execution while the accelerator performs parallel AI kernels.
+
+Snapdragon / On-Device AI
+
+The PC-side assistant is intended to use Qualcomm AI Hub or another supported open-source model. It can analyze workload characteristics, explain bottlenecks and suggest accelerator parameters. Qualcomm AI Hub supports optimizing, validating and deploying AI models for Qualcomm devices.
+
+Technology
+
+Verilog HDL / SystemVerilog
+
+64-bit RISC-V RTL
+
+RTL simulation
+
+Python
+
+Qualcomm AI Hub / supported runtime
+
+GitHub
+
+Snapdragon-powered HP PC
+
+Current Status
+
+The AI accelerator and AI-model integration in this README are a proposed extension of the existing RISC-V project. They should be implemented, simulated/tested and documented before being presented as completed functionality.
+
+Future Work
+
+Implement the accelerator RTL.
+
+Define the RISC-V-to-accelerator interface.
+
+Add testbenches and matrix/MAC kernels.
+
+Build the PC-side AI assistant.
+
+Optimize and validate the selected model on Snapdragon hardware.
+
+Measure latency and memory behavior.
+
+Goal
+
+Bridge RISC-V processor design, dedicated AI acceleration, RTL development and on-device AI in one demonstrable prototype.
 ---
 
 ## ✨ Features
